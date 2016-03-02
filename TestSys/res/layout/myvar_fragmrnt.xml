@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="小车账户充值"
+        android:textSize="50sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="请输入小车id"
+            android:textSize="30sp" />
+
+        <EditText
+            android:id="@+id/car_id"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.1" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="请输入充值金额"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/car_p"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.1" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/cx"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="充值" />
+
+    <Button
+        android:id="@+id/sx"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="刷新" />
+
+    <ListView
+        android:id="@+id/car"
+        android:layout_width="match_parent"
+        android:layout_height="269dp" >
+
+    </ListView>
+
+    <GridView
+        android:id="@+id/gridView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:numColumns="2" >
+    </GridView>
+
+</LinearLayout>

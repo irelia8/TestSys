@@ -36,8 +36,9 @@ public class TrafficLightAdapter extends ArrayAdapter<TrafficLight> {
          red = (TextView) view.findViewById(R.id.red);
          green = (TextView) view.findViewById(R.id.green);
          yellow = (TextView) view.findViewById(R.id.yellow);
-         red.setText("红灯："tl.getRedTime());
-         
-         
+         red.setText("红灯：" + tl.getRedTime());
+         green.setText("绿灯：" + tl.getRedTime());
+         yellow.setText("黄灯：" + tl.getYellowTime());
+         return view;
 	}
 }

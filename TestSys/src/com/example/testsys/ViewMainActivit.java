@@ -5,6 +5,7 @@ import java.util.List;
 
 import com.example.testsys.adapter.ViewPagerAdapter;
 import com.example.testsys.fragment.ChartViewFragment;
+import com.example.testsys.fragment.EnvironmentFragment;
 import com.example.testsys.fragment.MyCarFragment;
 import com.example.testsys.fragment.NewsFragment;
 
@@ -41,7 +42,7 @@ public class ViewMainActivit extends FragmentActivity {
 				android.R.color.holo_blue_dark));
 		fragments = new ArrayList<Fragment>();
 		fragments.add(new MyCarFragment());
-		fragments.add(new NewsFragment());
+		fragments.add(new EnvironmentFragment());
 		fragments.add(new NewsFragment());
 		titleList.add("我的座驾 ");
 		titleList.add("道路状况");

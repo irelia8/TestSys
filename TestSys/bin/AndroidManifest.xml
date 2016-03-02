@@ -19,7 +19,7 @@
             android:name="com.example.testsys.MainActivity"
             android:label="@string/app_name" >
         </activity>
-        <activity android:name="ViewMainActivit" >
+        <activity android:name="com.example.testsys.ViewMainActivit" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

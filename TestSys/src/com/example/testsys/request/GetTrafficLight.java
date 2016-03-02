@@ -19,7 +19,7 @@ public class GetTrafficLight extends BaseRequestNew<TrafficLight> {
 	@Override
 	public String onGetJasonBody(String requeststr) {
 		// TODO Auto-generated method stub
-		String strJson = "{\"TrafficLightID\":" +  Integer.valueOf(requeststr) + "}";
+		String strJson = "{\"TrafficLightId\":" +  Integer.valueOf(requeststr) + "}";
 		
 		return strJson;
 	}
@@ -42,11 +42,14 @@ public class GetTrafficLight extends BaseRequestNew<TrafficLight> {
 		} catch (JSONException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
+		}catch (Exception e) {
+			// TODO: handle exception
+			e.printStackTrace();
 		}
 		
-		if (trafficLight.getYellowTime()!=0) {
+		
 			super.returnValue = trafficLight;
-		}
+		
 		
 	}
 

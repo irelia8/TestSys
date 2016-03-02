@@ -22,7 +22,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_weight="0.03"
-        android:text="道路拥挤状况"
+        android:text="站台情况"
         android:textSize="50sp"
         android:textStyle="bold" />
 
